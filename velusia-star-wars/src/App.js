@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import './App.css';
+import Nav from './components/nav'
 import DisplayProfile from './components/displayProfile'
 
 
@@ -28,8 +28,13 @@ class App extends Component {
 
     } else {
       return (
+
         <div className="App">
+          <div className="background">
+            <Nav />
+          </div>
           <DisplayProfile profile={this.state.profile}/>
+
         </div>
       );
     }
