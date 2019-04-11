@@ -3,6 +3,11 @@
     object-fit: cover;
     border: 0;
 	width: 100px;
+<<<<<<< HEAD
     max-height: auto;
+=======
+    height: 150px;
+
+>>>>>>> dev
 }
 
