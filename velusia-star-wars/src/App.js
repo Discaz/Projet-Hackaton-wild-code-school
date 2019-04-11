@@ -1,27 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  state ={
+    profile: [],
+    loading: true
+  }
+
+  getProfile = () => {
+    fetch('https://melroune.github.io/starwars-api/api/all.json')
+    .then(res => res.json())
+    .then(res => this.setState({ profile: res, loading:false}))
+
+  }
+
+  componentDidMount() {
+    this.getProfile()
+  }
+  
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+    if (this.state.loading) {
+      return (<div>loading</div>)
+
+    } else {
+      return (
+        <div className="App">
+          <DisplayProfile profile={this.state.profile}/>
+        </div>
+      );
+    }
   }
 }
 
