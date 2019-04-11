@@ -1,19 +1,22 @@
 import React from "react"
+import './displayProfile.css'
 
 
 
 const DisplayProfile = ({profile}) => {
+    const random =  Math.floor(Math.random()*profile.length) 
+
     return <div className="">
-                    
+         
     <picture>
-        <img className="profileImg" src={profile[1].image} alt=""/>
+        <img className="profileImg" src={profile[random].image} alt=""/>
     </picture>
     
     <div className="">
-	<h2 className=""> Name : {profile[1].name} </h2>
-        <p className=""> Gender :  </p>
-        <p className="">Eyecolor: {profile[1].eyeColor}</p>
-        <p> Species : {profile[1].species} </p>
+	<h2 className=""> Name : {profile[random].name} </h2>
+        <p className=""> Gender : {profile[random].gender} </p>
+        <p className="">Eyecolor: {profile[random].eyeColor}</p>
+        <p> Species : {profile[random].species} </p>
     </div>
     
 
