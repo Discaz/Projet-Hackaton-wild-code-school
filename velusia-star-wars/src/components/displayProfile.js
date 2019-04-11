@@ -2,18 +2,18 @@ import React from "react"
 
 
 
-const DisplayProfile = (props) => {
+const DisplayProfile = ({profile}) => {
     return <div className="">
                     
     <picture>
-        <img className="profileImg" src="https://vignette.wikia.nocookie.net/starwars/images/b/b7/MP-MonMothma.png" alt=""/>
+        <img className="profileImg" src={profile[1].image} alt=""/>
     </picture>
     
     <div className="">
-	<h2 className=""> Name : Mon Mothma </h2>
-        <p className=""> Gender : female </p>
-        <p className="">Eyecolor: pale blue-green</p>
-        <p> Species : human </p>
+	<h2 className=""> Name : {profile[1].name} </h2>
+        <p className=""> Gender :  </p>
+        <p className="">Eyecolor: {profile[1].eyeColor}</p>
+        <p> Species : {profile[1].species} </p>
     </div>
     
 
