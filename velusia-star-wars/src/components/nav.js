@@ -12,7 +12,7 @@ class Nav extends Component {
             </label>
             <br /><br />
             <label className="nav-pass">
-                <input type="password" name="password" placeholder="passeword"/>
+                <input type="password" name="password" placeholder="password"/>
             </label>
                 <button className="nav-send" type="submit" value="Submit">send</button>
           </form>
