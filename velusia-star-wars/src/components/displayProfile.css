@@ -3,14 +3,14 @@
     border: 0;
 	width: 350px;
     height: 420px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
 }
 
 .profileImage{
     object-fit: contain;
     display: inline-block;
     border: 0;
-	height: 420px;
+	
 }
 
 .card {
