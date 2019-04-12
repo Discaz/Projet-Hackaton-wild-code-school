@@ -4,11 +4,15 @@
 }
 
 .displayCards{
-  background: hsl(0, 0%, 90%);
+  background-image: url("https://ak9.picdn.net/shutterstock/videos/22001749/thumb/1.jpg");
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 1fr
+  grid-template-rows: 1fr;
+  left: 50px;
+  grid-gap: 15px;
 }
+
+
 
 /* Media Queries */
 

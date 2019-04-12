@@ -2,27 +2,30 @@
     display: inline-block;
     border: 0;
 	width: 350px;
-    height: 400px;
-
+    height: 420px;
+    border-radius: 20px 20px 0 0;
 }
 
 .profileImage{
     object-fit: contain;
     display: inline-block;
-   border: 0;
-	width: 350px;
-    }
+    border: 0;
+	
+}
 
-    .card {
+.card {
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 350px;
     margin-top: 10px;
+    position: relative;
+    left: 50px;
+    background: hsl(0, 0%, 90%);
 }
 
 
 .card-content{
- 
+    background: hsl(0, 0%, 90%);
     text-align: center;
    }
 
