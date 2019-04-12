@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/nav'
 import DisplayProfile from './components/displayProfile'
-
+import DisplayAbdou from './components/displayAbdou'
 
 class App extends Component {
 
@@ -33,8 +33,11 @@ class App extends Component {
           <div className="background">
             <Nav />
           </div>
+          <div className="displayCards">
           <DisplayProfile profile={this.state.profile}/>
-
+          
+          <DisplayAbdou />
+          </div>
         </div>
       );
     }
