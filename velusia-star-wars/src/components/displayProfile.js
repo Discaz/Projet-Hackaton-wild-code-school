@@ -13,10 +13,10 @@ const DisplayProfile = ({profile}) => {
     </picture>
     
     <div className="card-content">
-	<h2 className=""> Name : {profile[random].name} </h2>
-        <p className=""> Gender : {profile[random].gender} </p>
+	<h2 className=""> Name : {profile[random].name} </h2>
+        <p className=""> Gender : {profile[random].gender} </p>
         <p className="">Eyecolor: {profile[random].eyeColor}</p>
-        <p> Species : {profile[random].species} </p>
+        <p> Species : {profile[random].species} </p>
     </div>
     
 
