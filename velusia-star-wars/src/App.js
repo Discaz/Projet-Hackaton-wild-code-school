@@ -5,6 +5,7 @@ import DisplayProfile from './components/displayProfile'
 import DisplayAbdou from './components/displayAbdou'
 
 import Category from './components/Category'
+import DisplayMatch from './components/DisplayMatch';
 
 class App extends Component {
 
@@ -42,7 +43,9 @@ class App extends Component {
           <div >
           <DisplayProfile profile={this.state.profile}/>
           </div>
-          
+          <div>
+          <DisplayMatch/>
+          </div>
           <div>
           <DisplayAbdou />
           </div>
