@@ -3,7 +3,6 @@ import './App.css';
 import Nav from './components/nav'
 import DisplayProfile from './components/displayProfile'
 
-
 class App extends Component {
 
   state ={
