@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/nav'
 import DisplayProfile from './components/displayProfile'
+import Robot from './components/Robot'
 import DisplayAbdou from './components/displayAbdou'
-import Category from './components/Category';
-import DisplayMatch from './components/DisplayMatch';
+import Category from './components/Category'
+import DisplayMatch from './components/DisplayMatch'
 
 class App extends Component {
 
@@ -48,6 +49,7 @@ class App extends Component {
             </div>   
           </div> 
           <Category getProfile={this.getProfile}/>
+          <Robot />
         </div>
       );
     }
