@@ -1,25 +1,27 @@
 .Frame {
     display: flex;
-}
-.Categories {
+        width: 100vw;
+        background-image: url("https://ak9.picdn.net/shutterstock/videos/22001749/thumb/1.jpg");
+text-align:center;
+ }
+ .Categories {
     display: flex;
     flex-direction: column;
-}
-.button {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #f1f1f1;
-    color: black;
-    font-size: 16px;
-    padding: 10px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+ }
+ .button {
+    color: #fff;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 0.8em;
+    text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-left: 500px;
         }
-  
-  .button:hover {
-    background-color: black;
-    color: white;}
-  
