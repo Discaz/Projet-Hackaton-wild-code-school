@@ -3,7 +3,7 @@
     border: 0;
 	width: 350px;
     height: 420px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .profileImage{
@@ -19,14 +19,15 @@
     width: 350px;
     margin-top: 10px;
     position: relative;
-
-    background: hsl(0, 0%, 90%);
+    border-radius: 0 0 20px 20px;
+    background: black;
 }
 
 
-.card-content{
-    background: hsl(0, 0%, 90%);
+.cards-content{
+    background: black;
     text-align: center;
+    color: white;
    }
 
 

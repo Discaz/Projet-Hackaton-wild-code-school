@@ -12,7 +12,7 @@ const DisplayProfile = ({profile}) => {
         <img className="profileImg" src={profile[random].image} alt=""/>
     </picture>
     
-    <div className="card-content">
+    <div className="cards-content">
 	<h2 className=""> Name : {profile[random].name} </h2>
         <p className=""> Gender : {profile[random].gender} </p>
         <p className="">Eyecolor: {profile[random].eyeColor}</p>
