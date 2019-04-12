@@ -7,7 +7,7 @@ const DisplayAbdou = () => {
 
     return <div className="card">
          
-    <picture>
+    <picture className="profileImage">
         <img className="profileImg" src="https://res.cloudinary.com/dzzuxhr3r/image/upload/v1555015487/hackaton/IMG_5485_1.jpg" alt="Abdou"/>
     </picture>
     

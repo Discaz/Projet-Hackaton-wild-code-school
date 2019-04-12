@@ -34,9 +34,13 @@ class App extends Component {
             <Nav />
           </div>
           <div className="displayCards">
-          <DisplayProfile profile={this.state.profile}/>
           
+          <div>
+          <DisplayProfile profile={this.state.profile}/>
+          </div>
+          <div>
           <DisplayAbdou />
+          </div>
           </div>
         </div>
       );
