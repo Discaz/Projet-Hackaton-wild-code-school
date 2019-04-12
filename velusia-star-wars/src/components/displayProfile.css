@@ -1,13 +1,19 @@
 .profileImg {
     display: inline-block;
-    object-fit: cover;
     border: 0;
 	width: 350px;
-    height: 300px;
+    height: 400px;
 
 }
 
-.card {
+.profileImage{
+    object-fit: contain;
+    display: inline-block;
+   border: 0;
+	width: 350px;
+    }
+
+    .card {
     border: 1px solid black;
     border-radius: 10px;
     width: 350px;
@@ -15,8 +21,9 @@
 }
 
 
-
 .card-content{
  
     text-align: center;
    }
+
+

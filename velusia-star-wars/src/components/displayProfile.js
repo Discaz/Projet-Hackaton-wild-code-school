@@ -8,7 +8,7 @@ const DisplayProfile = ({profile}) => {
 
     return <div className="card">
          
-    <picture>
+    <picture className="profileImage">
         <img className="profileImg" src={profile[random].image} alt=""/>
     </picture>
     
