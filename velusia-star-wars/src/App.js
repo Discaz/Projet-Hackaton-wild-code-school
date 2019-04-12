@@ -3,6 +3,8 @@ import './App.css';
 import Nav from './components/nav'
 import DisplayProfile from './components/displayProfile'
 import Robot from './components/Robot'
+import DisplayAbdou from './components/displayAbdou'
+import Category from './components/Category'
 
 class App extends Component {
 
@@ -23,6 +25,7 @@ class App extends Component {
   }
   
   render() {
+
     if (this.state.loading) {
       return (<div>loading</div>)
 
@@ -33,10 +36,20 @@ class App extends Component {
           <div className="background">
             <Nav />
           </div>
+          <Category />
+          <div className="displayCards">
+          
+          <div >
           <DisplayProfile profile={this.state.profile}/>
-          <div className="robot">
-          <Robot />
+          <div>
+          <DisplayAbdou />
           </div>
+          </div>
+          <div className="robot">
+
+          </div>
+        </div>
+        <Robot />
         </div>
       );
     }

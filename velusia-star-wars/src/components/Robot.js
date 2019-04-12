@@ -93,26 +93,7 @@ class Robot extends React.Component {
       return (
         <div>
           <div className="config">
-            <div className='control-wrap'>
-              <p>{speed}</p>
-                <input
-                  type="range"
-                  min="0"
-                  max="11"
-                  step="0.1"
-                  value={speed}
-                  onChange={this.handleSpeedChange.bind(this)} />
-            </div>
-            <div className='control-wrap'>
-              <p> {accelMod}</p>
-                <input
-                  type="range"
-                  min="0"
-                  max="3"
-                  step="0.1"
-                  value={accelMod}
-                  onChange={this.handleAccelChange.bind(this)} />
-            </div>
+
           </div>
           
           <div className="bb8" style={{WebkitTransform: `translateX(${droidX}px)`}}>
