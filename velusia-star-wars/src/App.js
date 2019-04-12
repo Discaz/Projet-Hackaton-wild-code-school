@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/nav'
 import DisplayProfile from './components/displayProfile'
-
+import Robot from './components/Robot'
 
 class App extends Component {
 
@@ -34,7 +34,9 @@ class App extends Component {
             <Nav />
           </div>
           <DisplayProfile profile={this.state.profile}/>
-
+          <div className="robot">
+          <Robot />
+          </div>
         </div>
       );
     }
