@@ -4,6 +4,8 @@ import Nav from './components/nav'
 import DisplayProfile from './components/displayProfile'
 import DisplayAbdou from './components/displayAbdou'
 
+import Category from './components/Category'
+
 class App extends Component {
 
   state ={
@@ -23,6 +25,7 @@ class App extends Component {
   }
   
   render() {
+
     if (this.state.loading) {
       return (<div>loading</div>)
 
@@ -33,6 +36,7 @@ class App extends Component {
           <div className="background">
             <Nav />
           </div>
+          <Category />
           <div className="displayCards">
           
           <div >
