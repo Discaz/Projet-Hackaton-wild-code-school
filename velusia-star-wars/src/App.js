@@ -4,6 +4,7 @@ import Nav from './components/nav'
 import DisplayProfile from './components/displayProfile'
 import DisplayAbdou from './components/displayAbdou'
 import Category from './components/Category';
+import DisplayMatch from './components/DisplayMatch';
 
 class App extends Component {
 
@@ -12,11 +13,11 @@ class App extends Component {
     loading: true
   }
 
-  getProfile = (e) => {
+  getProfile = () => {
     fetch('https://melroune.github.io/starwars-api/api/all.json')
     .then(res => res.json())
-    .then(res => console.log(res) || this.setState({ profile: res, loading:false}))
-
+    .then(res => this.setState({ profile: res, loading:false}))
+    // e.preventDefault()    
   }
 
   componentDidMount() {
@@ -34,14 +35,19 @@ class App extends Component {
           <div className="background">  
             <Nav />
           </div> 
-         
+
           <div className="displayCards"> 
-          
-          <DisplayProfile profile={this.state.profile}/>
-          <DisplayAbdou />
+            <div>
+              <DisplayProfile profile={this.state.profile}/>
+            </div>
+            <div>
+              <DisplayMatch />
+            </div>
+            <div>
+              <DisplayAbdou />  
+            </div>   
+          </div> 
           <Category getProfile={this.getProfile}/>
-         </div> 
-           
         </div>
       );
     }

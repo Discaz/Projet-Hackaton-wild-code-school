@@ -3,11 +3,11 @@ import "./Category.css"
 
 
 const Category = props => (
-
+ <div className="Frame">
 	<form onSubmit={props.getProfile}>
-		<button className="button">Recherch</button>
+		<button className="button">Recherche</button>
 	</form>
-
+</div>
 );
 
 
