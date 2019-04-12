@@ -1,0 +1,9 @@
+.profileImg {
+    display: inline-block;
+    object-fit: cover;
+    border: 0;
+	width: 100px;
+    height: 150px;
+
+}
+
