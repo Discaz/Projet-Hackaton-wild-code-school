@@ -5,6 +5,7 @@ body {
     color: #EEEEEE;
     text-align: center;
     font-family: "Lato", sans-serif;
+    background-image: url("https://ak9.picdn.net/shutterstock/videos/22001749/thumb/1.jpg")
  }
  
  @media screen and (max-width: 700px) {
@@ -89,7 +90,7 @@ body {
  
  .menu {
     margin: auto;
-    position: absolute;
+    
     top: 0;
     bottom: 0;
     left: 0;
