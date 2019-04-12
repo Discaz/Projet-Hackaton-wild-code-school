@@ -1,0 +1,25 @@
+.Frame {
+    display: flex;
+}
+.Categories {
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+        }
+  
+  .button:hover {
+    background-color: black;
+    color: white;}
+  

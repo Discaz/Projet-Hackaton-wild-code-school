@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/nav'
 import DisplayProfile from './components/displayProfile'
+import Category from './components/Category'
 
 class App extends Component {
 
@@ -10,10 +11,11 @@ class App extends Component {
     loading: true
   }
 
-  getProfile = () => {
+  getProfile = (e) => {
+
     fetch('https://melroune.github.io/starwars-api/api/all.json')
     .then(res => res.json())
-    .then(res => this.setState({ profile: res, loading:false}))
+    .then(res => console.log(res) || this.setState({ profile: res, loading:false}))
 
   }
 
@@ -27,16 +29,17 @@ class App extends Component {
 
     } else {
       return (
-
         <div className="App">
           <div className="background">
+  
             <Nav />
           </div>
+          <Category />
           <DisplayProfile profile={this.state.profile}/>
-
         </div>
       );
     }
+  
   }
 }
 

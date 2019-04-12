@@ -1,8 +1,5 @@
 import React from "react"
 import './displayProfile.css'
-
-
-
 const DisplayProfile = ({profile}) => {
     const random =  Math.floor(Math.random()*profile.length) 
 
