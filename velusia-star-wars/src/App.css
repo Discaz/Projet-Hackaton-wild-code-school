@@ -2,3 +2,25 @@
   background-image: url("https://ak9.picdn.net/shutterstock/videos/22001749/thumb/1.jpg");
   width: 100vw;
 }
+
+.displayCards{
+  background-image: url("https://ak9.picdn.net/shutterstock/videos/22001749/thumb/1.jpg");
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr;
+  left: 50px;
+  grid-gap: 15px;
+}
+
+
+
+/* Media Queries */
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .displayCards{
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr 1fr 1fr ;
+  }
+}

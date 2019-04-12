@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/nav'
 import DisplayProfile from './components/displayProfile'
+<<<<<<< HEAD
+=======
+import DisplayAbdou from './components/displayAbdou'
+
+>>>>>>> 039cdabbd138bbf56abe7f8ea0ba6d60f2c5afd1
 import Category from './components/Category'
 
 class App extends Component {
@@ -24,6 +29,10 @@ class App extends Component {
   }
   
   render() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 039cdabbd138bbf56abe7f8ea0ba6d60f2c5afd1
     if (this.state.loading) {
       return (<div>loading</div>)
 
@@ -35,11 +44,27 @@ class App extends Component {
             <Nav />
           </div>
           <Category />
+<<<<<<< HEAD
           <DisplayProfile profile={this.state.profile}/>
         </div>
       );
     }
   
+=======
+          <div className="displayCards">
+          
+          <div >
+          <DisplayProfile profile={this.state.profile}/>
+          </div>
+          
+          <div>
+          <DisplayAbdou />
+          </div>
+          </div>
+        </div>
+      );
+    }
+>>>>>>> 039cdabbd138bbf56abe7f8ea0ba6d60f2c5afd1
   }
 }
 
