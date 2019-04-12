@@ -29,4 +29,21 @@
     text-align: center;
    }
 
+/* Media Queries */
 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+        .card{
+            position: relative;
+            left: 5px;
+        }
+}
+  
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .card{
+        position: relative;
+        left: 10px;
+    }
+  }
